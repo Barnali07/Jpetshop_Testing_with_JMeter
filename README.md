@@ -1,1 +1,15 @@
-# Jpetshop_Testing_with_JMeter
+I’ve completed a performance test on a frequently used API for the test App. 
+Test executed for the below-mentioned scenario in website jpetstore(URL: https://petstore.octoperf.com/actions/Catalog.action?fbclid=IwAR1T6AFXfuvyRKQ6xuoSbt4vwr9BFpAvDUx1vX5n9t_OCdUL4DHhUpqM-qQ)
+
+
+20 Concurrent Request with 1 Loop Count; Avg TPS for Total Samples is ~ 60 And Total Concurrent API requested: 5100.
+25 Concurrent Request with 1 Loop Count; Avg TPS for Total Samples is ~ 69 And Total Concurrent API requested: 6375.
+35 Concurrent Request with 1 Loop Count; Avg TPS for Total Samples is ~ 100 And Total Concurrent API requested:8925.
+70 Concurrent Request with 1 Loop Count; Avg TPS for Total Samples is ~ 201 And Total Concurrent API requested: 17850.
+140 Concurrent Request with 1 Loop Count; Avg TPS for Total Samples is ~ 355 And Total Concurrent API requested: 35640.
+
+While executing 140 concurrent requests, found that 1 request got a connection timeout, and the error rate is 1.30%. 
+
+The server can handle almost concurrent 28000 API calls with less than  one percent(1%) error rate.
+
+Please find the details report in the attachment and let me know if you have any further queries.
